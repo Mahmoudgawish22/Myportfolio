@@ -1,0 +1,39 @@
+#Display {
+    margin-top: 100px;
+    padding: 50px;
+}
+.nav-link0 {
+    color:  rgb(39, 48, 61);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;      
+}
+#nav {
+    display: flex;
+    justify-content: center;
+}
+.photoposts {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 15px;
+}
+.photolink {
+    cursor: pointer;
+}
+.photolink:hover {
+    animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    border-radius: 10px;
+    
+}
+@keyframes scale-up-center {
+    0% {
+              transform: scale(1);
+    }
+    100% {
+              transform: scale(1.1);
+    }
+  }

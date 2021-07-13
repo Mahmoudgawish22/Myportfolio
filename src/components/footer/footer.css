@@ -1,0 +1,23 @@
+#footer {
+    background-color: rgb(39, 48, 61);
+    padding: 20px;
+    height: auto;
+}
+#footerlogo {
+    display: flex;
+    align-items: center;
+}
+.footercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.icondiscrbfooter {
+    text-align: center;
+    color: #fff;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+}

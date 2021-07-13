@@ -1,0 +1,54 @@
+#getStarted1 {
+    font-size: 0.8125rem;
+    line-height: 1.63;
+    letter-spacing: 1.63px;
+    font-weight: 700;
+    color: rgb(39, 48, 61);
+    font-family: 'Inter', sans-serif;
+}
+#getStarted2 {
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: rgb(39, 48, 61);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -2.81px;
+    font-size: 45px;
+    line-height: 56px;
+}
+#mainHeader {
+    padding: 40px;
+    height: 500px;
+}
+#explore {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+#me {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+#mainHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-secondary {
+    background-color: rgb(39, 48, 61);
+}
+@media (max-width: 650px) {
+    #me {
+    width: 100px;
+    height: 100px;
+    }
+    #mainHeader {
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    #getStarted2 {
+        font-size: 40px;
+    }
+    #explore {
+        margin-top: 20px;
+    }
+}

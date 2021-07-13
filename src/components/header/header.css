@@ -1,0 +1,16 @@
+#header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    align-items: center;
+}
+#logo0 {
+    font-family: 'Inter', sans-serif;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.42;
+    color: rgb(39, 48, 61)
+}
