@@ -43,7 +43,8 @@
     }
     #mainHeader {
         flex-direction: column-reverse;
-        gap: 5px;
+        gap: 10px;
+        margin-top: 20px;
     }
     #getStarted2 {
         font-size: 40px;
