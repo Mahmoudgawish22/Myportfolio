@@ -16,7 +16,7 @@ function Footer() {
                       The entire website was designed using React.js
                       <br/>
                       <br/>
-                      How do you drink your Coffe?
+                      How do you drink your Coffee?
                       <br/>
                       (+971) 507327385
                       <br/>
