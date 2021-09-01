@@ -59,7 +59,7 @@ function PlaceholderModal(props) {
           </p>
           <a href="https://github.com/Mahmoudgawish22/placeholderStore" target="_blank" className="btn btn-block btn-dark">View Front-End source code on Github!</a>
           <br/>
-          <a href="https://placeholder-store.netlify.app/" target="_blank" className="btn btn-block btn-danger">View It Like On Netlify!</a>
+          <a href="https://placeholder-store.netlify.app/" target="_blank" className="btn btn-block btn-danger">View It Live On Netlify!</a>
           </div>
         </Modal.Body>
         <Modal.Footer>
