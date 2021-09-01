@@ -73,12 +73,40 @@ import freeCodeCamp62 from '../../img/g21.png'
 import freeCodeCamp63 from '../../img/g22.png'
 import freeCodeCamp64 from '../../img/g23.png'
 
+import placeholder1 from '../../img/p1.png'
+import placeholder2 from '../../img/p2.png'
+import placeholder3 from '../../img/p3.png'
+import placeholder4 from '../../img/p4.png'
+import placeholder5 from '../../img/p5.png'
+import placeholder6 from '../../img/p6.png'
+import placeholder8 from '../../img/p8.png'
+import placeholder9 from '../../img/p9.png'
+import placeholder10 from '../../img/p10.png'
+import placeholder11 from '../../img/p11.png'
+import placeholder12 from '../../img/p12.png'
+import placeholder13 from '../../img/p13.png'
+import placeholder14 from '../../img/p14.png'
+import placeholder15 from '../../img/p15.png'
+import placeholder16 from '../../img/p16.png'
+import placeholder17 from '../../img/p17.png'
+import placeholder18 from '../../img/p18.png'
+import placeholder19 from '../../img/p19.png'
+import placeholder20 from '../../img/p20.png'
+import placeholder21 from '../../img/p21.png'
+import placeholder22 from '../../img/p22.png'
+import placeholder23 from '../../img/p23.png'
+import placeholder24 from '../../img/p24.png'
+import placeholder25 from '../../img/p25.png'
+import placeholder26 from '../../img/p26.png'
+
+
 import NativeModal from '../displaySection/content/nativeModal/native'
 import D3Modal from '../displaySection/content/d3Modal/d3'
 import ReactModal from '../displaySection/content/reactCModal/reactModal'
 import GpModal from '../displaySection/content/GPModal/gpModal'
 import RwmgModal from '../displaySection/content/RWMGModal/rwmgModal'
 import TimoModal from '../displaySection/content/timoModal/timoModal'
+import PlaceholderModal from './content/placeholderModal/placeholderModal'
 
 function Display(props) {
     const [nativeModalShow, setNativeModalShow] = React.useState(false);
@@ -87,8 +115,10 @@ function Display(props) {
     const [gpModalShow, setGpModalShow] = React.useState(false);
     const [rModalShow, setRModalShow] = React.useState(false);
     const [timoModalShow, setTimoModalShow] = React.useState(false);
+    const [placeholderShow, setPlaceholderShow] = React.useState(false);
 
-    const posts = [MernStack, reactprojects, freeCodeCamp, freeCodeCamp1, freeCodeCamp2, freeCodeCamp3, freeCodeCamp4,
+
+    const posts = [placeholder1, MernStack, reactprojects, freeCodeCamp, freeCodeCamp1, freeCodeCamp2, freeCodeCamp3, freeCodeCamp4,
         freeCodeCamp5, freeCodeCamp6, freeCodeCamp7, freeCodeCamp8, freeCodeCamp9, freeCodeCamp10, freeCodeCamp11, 
         freeCodeCamp12, freeCodeCamp13, freeCodeCamp14];
 
@@ -109,17 +139,24 @@ function Display(props) {
         freeCodeCamp49, freeCodeCamp50, freeCodeCamp51, freeCodeCamp52, freeCodeCamp53, freeCodeCamp54, freeCodeCamp55, 
         freeCodeCamp56, freeCodeCamp57, freeCodeCamp58, freeCodeCamp59, freeCodeCamp60, freeCodeCamp61, freeCodeCamp62, 
         freeCodeCamp63, freeCodeCamp64, freeCodeCamp13, freeCodeCamp14];
+
+    const placeholder = [placeholder1, placeholder2, placeholder3, placeholder4, placeholder5, placeholder6,
+        placeholder8, placeholder9, placeholder10, placeholder11, placeholder12, placeholder13, placeholder14,
+        placeholder15, placeholder16, placeholder17, placeholder18, placeholder19, placeholder20, placeholder21,
+        placeholder22, placeholder23, placeholder24, placeholder25, placeholder26];
     
     const handelClick = (i) => {
         if (i == 0) {
-            setTimoModalShow(true)
+            setPlaceholderShow(true);
         } else if (i == 1) {
+            setTimoModalShow(true)
+        } else if (i==2 ) {
             setRModalShow(true)
-        } else if (i==2 | i==3 | i==4 | i==5) {
+        } else if (i==3 | i==4 | i==5 | i==6) {
             setD3ModalShow(true)
-        } else if (i==6 | i==7 | i==8 | i==9 | i==10) {
+        } else if (i==7 | i==8 | i==9 | i==10 | i==11) {
             setReactModalShow(true)
-        } else if (i==11 | i==12 | i==13) {
+        } else if (i==12 | i==13 | i==14) {
             setNativeModalShow(true)
         } else {
             setGpModalShow(true)
@@ -176,6 +213,12 @@ function Display(props) {
         closethis = {setTimoModalShow}
         posts = {timo}
         onHide={() => setTimoModalShow(false)}
+      />
+      <PlaceholderModal
+        show={placeholderShow}
+        closethis = {setPlaceholderShow}
+        posts = {placeholder}
+        onHide={() => setPlaceholderShow(false)}
       />
         </div>
     )
