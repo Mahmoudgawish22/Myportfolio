@@ -98,6 +98,9 @@ import placeholder23 from '../../img/p23.png'
 import placeholder24 from '../../img/p24.png'
 import placeholder25 from '../../img/p25.png'
 import placeholder26 from '../../img/p26.png'
+import placeholder27 from '../../img/p27.png'
+import placeholder28 from '../../img/p28.png'
+
 
 
 import NativeModal from '../displaySection/content/nativeModal/native'
@@ -143,7 +146,7 @@ function Display(props) {
     const placeholder = [placeholder1, placeholder2, placeholder3, placeholder4, placeholder5, placeholder6,
         placeholder8, placeholder9, placeholder10, placeholder11, placeholder12, placeholder13, placeholder14,
         placeholder15, placeholder16, placeholder17, placeholder18, placeholder19, placeholder20, placeholder21,
-        placeholder22, placeholder23, placeholder24, placeholder25, placeholder26];
+        placeholder22, placeholder23, placeholder24, placeholder25, placeholder26, placeholder27, placeholder28];
     
     const handelClick = (i) => {
         if (i == 0) {
