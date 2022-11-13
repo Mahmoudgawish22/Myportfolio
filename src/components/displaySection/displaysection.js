@@ -1,12 +1,6 @@
 import React, {useEffect} from 'react'
 import '../displaySection/displaysection.css'
 import NativeModal from '../displaySection/content/nativeModal/native'
-import D3Modal from '../displaySection/content/d3Modal/d3'
-import ReactModal from '../displaySection/content/reactCModal/reactModal'
-import GpModal from '../displaySection/content/GPModal/gpModal'
-import RwmgModal from '../displaySection/content/RWMGModal/rwmgModal'
-import TimoModal from '../displaySection/content/timoModal/timoModal'
-import PlaceholderModal from './content/placeholderModal/placeholderModal'
 import { dataTable, websiteSections } from '../../database/dataTable'
 function Display(props) {
     const [generalModa, setGeneralModal] = React.useState(false);
