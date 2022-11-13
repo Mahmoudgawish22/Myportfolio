@@ -1,6 +1,6 @@
 import React from 'react'
 import '../mainHeader/mainheader.css'
-import logo from '../../img/89124653_1006285443080057_5379768557707984896_n.jpg'
+import logo from '../../img/IMG_6953.jpeg'
 
 function MainHeader(props) {
     return (
@@ -10,7 +10,9 @@ function MainHeader(props) {
                 <p id='getStarted2'>Front-End with React.js and Redux, Back-End with Express.js and Node.js</p>
                 <a id='explore' className='btn btn-block btn-secondary btn-lg' href='#Display'>Explore Works!</a>
             </div>
-            <img src={logo} id="me"/>
+            <div className='image_wrapper'>
+                <img src={logo} id="me"/>
+            </div>
         </div>
     )
 }

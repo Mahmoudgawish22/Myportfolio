@@ -15,58 +15,82 @@ function NativeModal(props) {
     }
 
     return (
-        <div>
-            {lightbox.isOpen && (
-          <Lightbox
-            mainSrc={props.posts[lightbox.photoIndex]}
-            nextSrc={props.posts[(lightbox.photoIndex + 1) % props.posts.length]}
-            prevSrc={props.posts[(lightbox.photoIndex + props.posts.length - 1) % props.posts.length]}
-            onCloseRequest={() => setLightbox({ isOpen: false })}
-            onMovePrevRequest={() =>setLightbox({photoIndex: (lightbox.photoIndex + props.posts.length - 1) % props.posts.length, isOpen: true})}
-            onMoveNextRequest={() =>setLightbox({photoIndex: (lightbox.photoIndex + 1) % props.posts.length, isOpen: true})}
-            imageTitle= 'Responsive Web Design Projects @freeCodeCamp'
-          />
+      <div>
+        {props?.data?.album?.length > 1?
+        <>
+        {lightbox.isOpen && (
+        <Lightbox
+          mainSrc={props?.data?.album[lightbox.photoIndex]}
+          nextSrc={props?.data?.album[(lightbox.photoIndex + 1) % props?.data?.album.length]}
+          prevSrc={props?.data?.album[(lightbox.photoIndex + props?.data?.album?.length - 1) % props?.data?.album?.length]}
+          onCloseRequest={() => setLightbox({ isOpen: false })}
+          onMovePrevRequest={() =>setLightbox({photoIndex: (lightbox.photoIndex + props?.data?.album?.length - 1) % props?.data?.album?.length, isOpen: true})}
+          onMoveNextRequest={() =>setLightbox({photoIndex: (lightbox.photoIndex + 1) % props?.data?.album?.length, isOpen: true})}
+          imageTitle= {props?.data?.title}
+        />
         )}
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header>
-          <Modal.Title id="contained-modal-title-vcenter">
-            Responsive Web Design Certfication
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <ul className='photoposts'>
+        </>:null}
+        <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+          <Modal.Header closeButton>
+            <Modal.Title id="contained-modal-title-vcenter">
+              {props?.data?.title}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <div style={{display: 'flex', flexDirection: 'column'}}>
+              <ul className='photoposts'>
                 {
-           props.posts.map((item, i) => <li key={i} className='photolink'>
-          <a className='itemlink' onClick={()=> handleClick(i)}>
-              <img className='imgposts' style={{height: '100px', width: '150px' , objectFit: 'cover',  verticalAlign: 'bottom'}} src={item} alt='post'/>
-          </a>
-      </li>)
-}
-                </ul>
-          <p>
-               In JAN 2021, And to get the certificate for the Responsive Web Design course.. I had to go through two hundred questions whose goal was to consolidate the important information I had learned about HTML5 and CSS3.
-Also, there were a number of final projects before the certification was received.
-It included:
-Personal portfolio
-Product Landing Page
-Technical Documentation
-          </p>
-          <a href="https://codepen.io/mahmoud-gawish" target="_blank" className="btn btn-block btn-dark">View source code!</a>
-          <br/>
-          <a href="https://www.freecodecamp.org/certification/mahmoudgawish22/responsive-web-design" target="_blank" className="btn btn-block btn-danger">View Certfication!</a>
-          </div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="dark" onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
-        
-      </Modal>
+                  props?.data?.album?.map((item, i) => 
+                  <li key={i} className={props?.data?.album?.length > 1? 'photolink':''}>
+                    <a className='itemlink' onClick={()=> props?.data?.album?.length > 1? handleClick(i):null}>
+                      <img className='imgposts' style={{height: '100px', width: '150px' , objectFit: 'contain',  verticalAlign: 'bottom'}} src={item} alt='post'/>
+                    </a>
+                  </li>
+                )}
+              </ul>
+              <div style={{display:'flex', flexDirection:'column', gap:'10px'}}>
+              <p style={{textAlign: 'left', margin: '0px', fontWeight:'bold'}}>
+                {props?.data?.desc}
+              </p>
+              {props?.data?.role?
+              <p style={{textAlign: 'left', margin: '0px'}}>
+                Role: <span style={{borderBottom: '1px solid #333', padding: '0px 5px 0px 5px'}}>{props?.data?.role}</span>
+              </p>:null
+              }
+              {props?.data?.frontEnd?.length?
+              <p style={{textAlign: 'left', margin: '0px'}}>
+                Front-End Tools: {props?.data?.frontEnd?.join(', ')}
+              </p>:null
+              }
+              {props?.data?.backEnd?.length?
+              <p style={{textAlign: 'left', margin: '0px'}}>
+                Back-End Tools: {props?.data?.backEnd?.join(', ')}
+              </p>:null
+              }
+              {props?.data?.startDate?
+              <p style={{textAlign: 'left', margin: '0px'}}>
+                Start Date: {props?.data?.startDate}
+              </p>:null
+              }
+              {props?.data?.endDate?
+              <p style={{textAlign: 'left', margin: '0px'}}>
+                End Date: {props?.data?.endDate}
+              </p>:null
+              }
+              </div>
+              <div style={{display: 'flex', alignItems:'center', justifyContent:'center', gap:'10px'}}>
+              {props?.data?.links?.github?
+              <a href={props?.data?.links?.github} target="_blank" className="btn btn-block btn-dark">View source code!</a>:
+              null
+              }
+              <br/>
+              {props?.data?.links?.live?
+              <a href={props?.data?.links?.live} target="_blank" className="btn btn-outline-dark">View Live</a>:
+              null}
+              </div>
+            </div>
+          </Modal.Body>
+        </Modal>
       
       </div>
     );

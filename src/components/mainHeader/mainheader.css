@@ -17,7 +17,7 @@
 }
 #mainHeader {
     padding: 40px;
-    height: 500px;
+    height: 85vh;
 }
 #explore {
     margin-top: 40px;
@@ -27,11 +27,13 @@
     border-radius: 50%;
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
 #mainHeader {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .btn-secondary {
     background-color: rgb(39, 48, 61);

@@ -18,7 +18,7 @@ function Footer() {
                       <br/>
                       How do you drink your Coffee?
                       <br/>
-                      (+971) 507327385
+                      (+971) 569871498
                       <br/>
                       <br/>
                       <span style={{color: 'white'}}> © 2021 ALL RIGHT RESEVED </span>

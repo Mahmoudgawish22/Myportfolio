@@ -1,6 +1,18 @@
 #Display {
-    margin-top: 100px;
-    padding: 50px;
+    /* margin-top: 100px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .nav-link0 {
     color:  rgb(39, 48, 61);
@@ -10,7 +22,7 @@
 }
 #nav {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .photoposts {
     list-style: none;
@@ -19,7 +31,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 15px;
-    gap: 15px;
+    gap: 20px;
 }
 .photolink {
     cursor: pointer;
@@ -27,7 +39,26 @@
 .photolink:hover {
     animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     border-radius: 10px;
-    
+    box-shadow: #80808091 1px 0px 8px
+}
+.modal-header {
+    background-color: rgb(39, 48, 61);
+    color: #fff;
+    min-height: 60px;
+}
+.modal-header button {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: unset;
+    font-size: 25px;
+}
+.modal-header button span {
+    margin-bottom: 5px;
 }
 @keyframes scale-up-center {
     0% {
