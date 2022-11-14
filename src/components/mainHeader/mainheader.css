@@ -40,7 +40,10 @@
 }
 @media (max-width: 900px) {
     #mainHeader {
-        height: 50vh;
+        height: 60vh;
+    }
+    .projects {
+        margin-top: 30px;
     }
 }
 @media (max-width: 650px) {
@@ -54,7 +57,9 @@
         margin-top: 20px;
     }
     #getStarted2 {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: unset;
+        letter-spacing: unset;
     }
     #explore {
         margin-top: 20px;
