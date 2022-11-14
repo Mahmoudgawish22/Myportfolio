@@ -138,14 +138,14 @@ const placeholder = [placeholder1, placeholder2, placeholder3, placeholder4, pla
     placeholder22, placeholder23, placeholder24, placeholder25, placeholder26, placeholder27, placeholder28];
 
 export const websiteSections = [
-    // {
-    //     title: 'Projects with MVP Applications and Game Design',
-    //     id: 1,
-    //     startDate: '',
-    //     endDate: ''
-    // },
     {
-        title: 'Freelancing Projects',
+        title: 'Projects with MVP Applications and Game Design',
+        id: 1,
+        startDate: '',
+        endDate: ''
+    },
+    {
+        title: 'Freelancing / Personal Projects',
         id: 2,
         startDate: '',
         endDate: ''
@@ -177,58 +177,58 @@ export const dataTable = [
     //     startDate: '05/2022',
     //     endDate: 'Present'
     // },
-    // {
-    //     title: 'NFT-Plus',
-    //     album: [nftLogo],
-    //     icon: nftLogo,
-    //     desc: 'A market place for NFTs where users can buy, sell nfts.',
-    //     links: {github: '', live: 'https://nft-plus.me/'},
-    //     role: 'Front-End Developer',
-    //     frontEnd: ['ReactJS', 'Bootstrap', 'Advanced CSS'],
-    //     backEnd: [],
-    //     period: 'mvp',
-    //     startDate: '03/2022',
-    //     endDate: '05/2022'
-    // },
-    // {
-    //     title: 'One4Pay',
-    //     album: [one4payLogo],
-    //     icon: one4payLogo,
-    //     desc: 'A landing page web application for one 4 pay payment gateway.',
-    //     links: {github: '', live: 'https://www.one4pay.com/'},
-    //     role: 'Front-End Developer',
-    //     frontEnd: ['ReactJS', 'Bootstrap', 'Advanced CSS'],
-    //     backEnd: [],
-    //     period: 'mvp',
-    //     startDate: '02/2022',
-    //     endDate: '03/2022'
-    // },
-    // {
-    //     title: 'Emirates Red Crescent',
-    //     album: [ercLogo],
-    //     icon: ercLogo,
-    //     desc: 'The main website for Emirates Red Crescent.',
-    //     links: {github: '', live: 'https://www.emiratesrc.ae/'},
-    //     role: 'Front-End Developer',
-    //     frontEnd: ['ReactJs', 'Redux', 'Axios', 'Bootstrap', 'Advanced CSS'],
-    //     backEnd: [],
-    //     period: 'mvp',
-    //     startDate: '10/2021',
-    //     endDate: '02/2022'
-    // },
-    // {
-    //     title: 'Plant Trees',
-    //     album: [planttreesLogo],
-    //     icon: planttreesLogo,
-    //     desc: 'An Emirates Red Crescent campings.',
-    //     links: {github: '', live: 'https://www.emiratesrc.ae/planttrees/'},
-    //     role: 'Front-End Developer',
-    //     frontEnd: ['HTML5', 'CSS3', 'Javascript'],
-    //     backEnd: [],
-    //     period: 'mvp',
-    //     startDate: '09/2021',
-    //     endDate: '10/2021'
-    // },
+    {
+        title: 'NFT-Plus',
+        album: [nftLogo],
+        icon: nftLogo,
+        desc: 'A market place for NFTs where users can buy, sell nfts.',
+        links: {github: '', live: 'https://nft-plus.me/'},
+        role: 'Front-End Developer',
+        frontEnd: ['ReactJS', 'Bootstrap', 'Advanced CSS'],
+        backEnd: [],
+        period: 'mvp',
+        startDate: '03/2022',
+        endDate: '05/2022'
+    },
+    {
+        title: 'One4Pay',
+        album: [one4payLogo],
+        icon: one4payLogo,
+        desc: 'A landing page web application for one 4 pay payment gateway.',
+        links: {github: '', live: 'https://www.one4pay.com/'},
+        role: 'Front-End Developer',
+        frontEnd: ['ReactJS', 'Bootstrap', 'Advanced CSS'],
+        backEnd: [],
+        period: 'mvp',
+        startDate: '02/2022',
+        endDate: '03/2022'
+    },
+    {
+        title: 'Emirates Red Crescent',
+        album: [ercLogo],
+        icon: ercLogo,
+        desc: 'The main website for Emirates Red Crescent.',
+        links: {github: '', live: 'https://www.emiratesrc.ae/'},
+        role: 'Front-End Developer',
+        frontEnd: ['ReactJs', 'Redux', 'Axios', 'Bootstrap', 'Advanced CSS'],
+        backEnd: [],
+        period: 'mvp',
+        startDate: '10/2021',
+        endDate: '02/2022'
+    },
+    {
+        title: 'Plant Trees',
+        album: [planttreesLogo],
+        icon: planttreesLogo,
+        desc: 'An Emirates Red Crescent campings.',
+        links: {github: '', live: 'https://www.emiratesrc.ae/planttrees/'},
+        role: 'Front-End Developer',
+        frontEnd: ['HTML5', 'CSS3', 'Javascript'],
+        backEnd: [],
+        period: 'mvp',
+        startDate: '09/2021',
+        endDate: '10/2021'
+    },
     {
         title: 'Placeholder Store',
         album: placeholder,
