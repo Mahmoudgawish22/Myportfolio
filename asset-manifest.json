@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/developwithmg/static/css/main.6f2de2d8.chunk.css",
-    "main.js": "/developwithmg/static/js/main.b5fbe1f1.chunk.js",
-    "main.js.map": "/developwithmg/static/js/main.b5fbe1f1.chunk.js.map",
+    "main.js": "/developwithmg/static/js/main.b0e6cb79.chunk.js",
+    "main.js.map": "/developwithmg/static/js/main.b0e6cb79.chunk.js.map",
     "runtime-main.js": "/developwithmg/static/js/runtime-main.60d946ec.js",
     "runtime-main.js.map": "/developwithmg/static/js/runtime-main.60d946ec.js.map",
     "static/css/2.098cfe87.chunk.css": "/developwithmg/static/css/2.098cfe87.chunk.css",
@@ -13,6 +13,7 @@
     "static/css/main.6f2de2d8.chunk.css.map": "/developwithmg/static/css/main.6f2de2d8.chunk.css.map",
     "static/js/2.6d178438.chunk.js.LICENSE.txt": "/developwithmg/static/js/2.6d178438.chunk.js.LICENSE.txt",
     "static/media/IMG_6953.c90a461c.jpeg": "/developwithmg/static/media/IMG_6953.c90a461c.jpeg",
+    "static/media/arabyLogo.01985f07.svg": "/developwithmg/static/media/arabyLogo.01985f07.svg",
     "static/media/books.269b91fe.png": "/developwithmg/static/media/books.269b91fe.png",
     "static/media/c1.60acf6c3.png": "/developwithmg/static/media/c1.60acf6c3.png",
     "static/media/c10.1e4dff5d.png": "/developwithmg/static/media/c10.1e4dff5d.png",
@@ -31,7 +32,6 @@
     "static/media/c7.57299de4.png": "/developwithmg/static/media/c7.57299de4.png",
     "static/media/c8.dc27621e.png": "/developwithmg/static/media/c8.dc27621e.png",
     "static/media/c9.76d28ae2.png": "/developwithmg/static/media/c9.76d28ae2.png",
-    "static/media/cvsaLogo.8ff6124b.svg": "/developwithmg/static/media/cvsaLogo.8ff6124b.svg",
     "static/media/erc.64dcfa29.png": "/developwithmg/static/media/erc.64dcfa29.png",
     "static/media/g1.517bde4b.png": "/developwithmg/static/media/g1.517bde4b.png",
     "static/media/g10.4ca81a3d.png": "/developwithmg/static/media/g10.4ca81a3d.png",
@@ -57,7 +57,18 @@
     "static/media/g7.4a7f0809.png": "/developwithmg/static/media/g7.4a7f0809.png",
     "static/media/g8.89c14fa0.png": "/developwithmg/static/media/g8.89c14fa0.png",
     "static/media/g9.fb7ce497.png": "/developwithmg/static/media/g9.fb7ce497.png",
+    "static/media/lock1.d2a8cfc2.png": "/developwithmg/static/media/lock1.d2a8cfc2.png",
+    "static/media/lock2.958a39f8.png": "/developwithmg/static/media/lock2.958a39f8.png",
+    "static/media/lock3.0804c04f.png": "/developwithmg/static/media/lock3.0804c04f.png",
+    "static/media/lock4.7e81d651.png": "/developwithmg/static/media/lock4.7e81d651.png",
+    "static/media/lock5.8702ff14.png": "/developwithmg/static/media/lock5.8702ff14.png",
+    "static/media/lock6.785207b0.png": "/developwithmg/static/media/lock6.785207b0.png",
+    "static/media/lock7.c5aba826.png": "/developwithmg/static/media/lock7.c5aba826.png",
+    "static/media/lock8.42fd8c9b.png": "/developwithmg/static/media/lock8.42fd8c9b.png",
+    "static/media/lock9.f4bdee90.png": "/developwithmg/static/media/lock9.f4bdee90.png",
+    "static/media/logo.372173cb.png": "/developwithmg/static/media/logo.372173cb.png",
     "static/media/logo.6ce24c58.svg": "/developwithmg/static/media/logo.6ce24c58.svg",
+    "static/media/mdLogo.4907a569.svg": "/developwithmg/static/media/mdLogo.4907a569.svg",
     "static/media/nftplus.f2bf2557.svg": "/developwithmg/static/media/nftplus.f2bf2557.svg",
     "static/media/o1.bb78e2be.png": "/developwithmg/static/media/o1.bb78e2be.png",
     "static/media/o10.aa92c958.png": "/developwithmg/static/media/o10.aa92c958.png",
@@ -123,6 +134,6 @@
     "static/css/2.098cfe87.chunk.css",
     "static/js/2.6d178438.chunk.js",
     "static/css/main.6f2de2d8.chunk.css",
-    "static/js/main.b5fbe1f1.chunk.js"
+    "static/js/main.b0e6cb79.chunk.js"
   ]
 }
