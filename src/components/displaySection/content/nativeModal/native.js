@@ -69,7 +69,7 @@ function NativeModal(props) {
               }
               {props?.data?.startDate?
               <p style={{textAlign: 'left', margin: '0px'}}>
-                Start Date: {props?.data?.startDate}
+                {props?.data?.endDate? 'Start Date': 'Date'}: {props?.data?.startDate}
               </p>:null
               }
               {props?.data?.endDate?

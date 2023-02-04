@@ -16,7 +16,10 @@ import freeCodeCamp12 from '../img/g1.png'
 import freeCodeCamp13 from '../img/g13.png'
 import freeCodeCamp14 from '../img/g24.png'
 
-import cvsaLogo from '../img/cvsaLogo.svg'
+import lockLogo from '../img/logo.png'
+import arabyLogo from '../img/arabyLogo.svg'
+
+import mdLogo from '../img/mdLogo.svg'
 import nftLogo from '../img/nftplus.svg'
 import one4payLogo from '../img/one4pay.svg'
 import ercLogo from '../img/erc.png'
@@ -110,12 +113,26 @@ import placeholder26 from '../img/p26.png'
 import placeholder27 from '../img/p27.png'
 import placeholder28 from '../img/p28.png'
 
+import lockAndKey1 from '../img/lock1.png'
+import lockAndKey2 from '../img/lock2.png'
+import lockAndKey3 from '../img/lock3.png'
+import lockAndKey4 from '../img/lock4.png'
+import lockAndKey5 from '../img/lock5.png'
+import lockAndKey6 from '../img/lock6.png'
+import lockAndKey7 from '../img/lock7.png'
+import lockAndKey8 from '../img/lock8.png'
+import lockAndKey9 from '../img/lock9.png'
+
+
 const posts = [placeholder1, MernStack, reactprojects, freeCodeCamp, freeCodeCamp1, freeCodeCamp2, freeCodeCamp3, freeCodeCamp4,
     freeCodeCamp5, freeCodeCamp6, freeCodeCamp7, freeCodeCamp8, freeCodeCamp9, freeCodeCamp10, freeCodeCamp11, 
     freeCodeCamp12, freeCodeCamp13, freeCodeCamp14];
 
 const native = [freeCodeCamp9, freeCodeCamp10, freeCodeCamp11, freeCodeCamp15, freeCodeCamp16, freeCodeCamp17,
-        freeCodeCamp18];
+    freeCodeCamp18];
+
+const lockandKey = [lockAndKey1, lockAndKey2, lockAndKey3, lockAndKey4, lockAndKey5, lockAndKey6,
+    lockAndKey7, lockAndKey8, lockAndKey9];
 
 const reactC = [freeCodeCamp8, freeCodeCamp7, freeCodeCamp6, freeCodeCamp5, freeCodeCamp4];
 
@@ -164,19 +181,32 @@ export const websiteSections = [
     }
 ]
 export const dataTable = [
-    // {
-    //     title: 'CV SA',
-    //     album: [cvsaLogo],
-    //     icon: cvsaLogo,
-    //     desc: 'A web application for employment in the field of education only.',
-    //     links: {github: '', live: 'https://www.cv-sa.com/'},
-    //     role: 'Software Project Team Lead',
-    //     frontEnd: ['ReactJs', 'Redux', 'Axios'],
-    //     backEnd: ['Laravel', 'Mysql'],
-    //     period: 'mvp',
-    //     startDate: '05/2022',
-    //     endDate: 'Present'
-    // },
+    {
+        title: 'Araby AI',
+        album: [arabyLogo],
+        icon: arabyLogo,
+        desc: 'A web application for AI services.',
+        links: {github: '', live: 'https://araby.ai/'},
+        role: 'Front-End Developer',
+        frontEnd: ['ReactJs', 'Redux', 'Axios'],
+        backEnd: [],
+        period: 'mvp',
+        startDate: '12/2022',
+        endDate: '02/2023'
+    },
+    {
+        title: 'Madarsna',
+        album: [mdLogo],
+        icon: mdLogo,
+        desc: 'A web application for recruitment in the field of education only.',
+        links: {github: '', live: 'https://www.madarsna.sa/'},
+        role: 'Software Project Team Lead',
+        frontEnd: ['ReactJs', 'Redux', 'Axios'],
+        backEnd: ['Laravel', 'Mysql'],
+        period: 'mvp',
+        startDate: '05/2022',
+        endDate: '12/2022'
+    },
     {
         title: 'NFT-Plus',
         album: [nftLogo],
@@ -243,6 +273,19 @@ export const dataTable = [
         endDate: '09/2021'
     },
     {
+        title: 'Lock and Key',
+        album: lockandKey,
+        icon: lockLogo,
+        desc: 'A web application for a restaurant',
+        links: {github: '', live: 'https://lockandkey-eg.com/'},
+        role: 'Full Stack Developer',
+        frontEnd: ['ReactJs', 'Redux', 'Axios', 'Bootstrap'],
+        backEnd: ['Laravel'],
+        period: 'freelancer',
+        startDate: '12/2022',
+        endDate: '01/2023'
+    },
+    {
         title: 'Omar Timo Store',
         album: timo,
         icon: omarTimoLogo,
@@ -269,6 +312,19 @@ export const dataTable = [
         endDate: '07/2021'
     },
     {
+        title: 'Back End Development and APIs',
+        album: [freecodeCampLogo],
+        icon: freecodeCampLogo,
+        desc: 'Managing Packages with npm, Basic Node.js, Basic Express, MongoDB, And Mongoose.',
+        links: {github: '', live: 'https://www.freecodecamp.org/certification/mahmoudgawish22/back-end-development-and-apis'},
+        role: '',
+        frontEnd: [],
+        backEnd: [],
+        period: 'freeCodeCamp',
+        startDate: '04/2021',
+        endDate: ''
+    },
+    {
         title: 'Data Visualization Certification',
         album: d3,
         icon: freecodeCampLogo,
@@ -278,7 +334,7 @@ export const dataTable = [
         frontEnd: [],
         backEnd: [],
         period: 'freeCodeCamp',
-        startDate: '03/2021',
+        startDate: '04/2021',
         endDate: ''
     },
     {
@@ -295,16 +351,16 @@ export const dataTable = [
         endDate: ''
     },
     {
-        title: 'Data Visualization Certification',
-        album: d3,
+        title: 'JavaScript Algorithms and Data Structures',
+        album: [freecodeCampLogo],
         icon: freecodeCampLogo,
-        desc: 'D3.js, introduction to APIS, And AJAX.',
-        links: {github: '', live: 'https://www.freecodecamp.org/certification/mahmoudgawish22/data-visualization'},
+        desc: 'Basics, ES6, Regular Expression, Debugging, Data Structure, Basic and Intermediate Algorithm Scripting, OOP, And Functional Programming.',
+        links: {github: '', live: 'https://www.freecodecamp.org/certification/mahmoudgawish22/javascript-algorithms-and-data-structures'},
         role: '',
         frontEnd: [],
         backEnd: [],
         period: 'freeCodeCamp',
-        startDate: '03/2021',
+        startDate: '02/2021',
         endDate: ''
     },
     {

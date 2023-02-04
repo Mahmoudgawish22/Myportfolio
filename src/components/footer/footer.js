@@ -21,7 +21,7 @@ function Footer() {
                       (+971) 569871498
                       <br/>
                       <br/>
-                      <span style={{color: 'white'}}> © 2021 ALL RIGHT RESEVED </span>
+                      <span style={{color: 'white'}}> © {new Date().getFullYear()} ALL RIGHT RESEVED </span>
                   </p>
                   </div>
               </div>
